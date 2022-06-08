@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<link rel="stylesheet" type="text/css" href="Cstyle/style.css">
+    <link rel="stylesheet" href="Cstyle/bootstrap.min.css">
+    <script type="text/javascript" src="Cscript/script.js"></script>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+</head>
+<body>
+<section class="vh-100" style="background-color: #508bfc;">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+        <div class="card shadow-2-strong" style="border-radius: 1rem;">
+          <div class="card-body p-5 text-center">
+
+            <h3 class="mb-5">Sign in</h3>
+            <form name="login">
+            <div class="form-outline mb-4">
+              <input type="email" id="typeEmailX" name="usuario" class="form-control form-control-lg" />
+              <label class="form-label" for="typeEmailX">Usuario</label>
+            </div>
+
+            <div class="form-outline mb-4">
+              <input type="number" id="typeCuitX" name="cuit" class="form-control form-control-lg" />
+              <label class="form-label" for="typeCuitX">Cuit</label>
+            </div>
+
+            <div class="form-outline mb-4">
+              <input type="password" id="typePasswordX" name="password" class="form-control form-control-lg" />
+              <label class="form-label" for="typePasswordX">Password</label>
+            </div>
+
+            <!-- Checkbox -->
+            <div class="form-check d-flex justify-content-start mb-4">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="form1Example3"
+              />
+              <label class="form-check-label" for="form1Example3"> Remember password </label>
+            </div>
+
+            <button class="btn btn-primary btn-lg btn-block" type="submit" onclick="Opcion()">Login</button>
+        </form>
+            <hr class="my-4">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</body>
+</html>
